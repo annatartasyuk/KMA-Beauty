@@ -1,10 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KMA Beauty</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
 </head>
 <body>
+<!-- top-bar-->
+<div class="top-bar-container" data-sticky-container>
+    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu menu-hover-lines">
+                    <li class="hide-for-small-only blink-click"><a href="#">
+                        KMA Beauty
+                    </a>
+                    </li>
+                    <li class="show-for-small-only blink-click">
+                        <a href="#">
+                            KMA Beauty
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu menu-hover-lines">
+                    <li class="hide-for-small-only about-click"><a href="#">Про нас</a></li>
+                    <li class="show-for-small-only about-click"><a href="#"><i class="fi-crown"></i></a></li>
+                    <li class="hide-for-small-only services-click"><a href="#">Наші послуги</a></li>
+                    <li class="show-for-small-only services-click"><a href="#"><i class="fi-torsos-all-female"></i></a>
+                    </li>
+                    <li class="hide-for-small-only gallery-click"><a href="#">Галерея</a></li>
+                    <li class="show-for-small-only gallery-click"><a href="#"><i class="fi-photo"></i></a></li>
+                    <li class="hide-for-small-only contacts-click"><a href="#">Контакти</a></li>
+                    <li class="show-for-small-only contacts-click"><a href="#"><i class="fi-address-book"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- logo block -->
+<div class="logo-section">
+</div>
+<!-- about us -->
+<div class="about-us" style="box-sizing: content-box">
+    <div class="about-us-text">
+        <p> ДОДАТИ ОПИС</p>
+    </div>
+</div>
+<!-- services -->
+<div class="services">
+    <div class="orbit clean-hero-slider" role="region" aria-label="Services" data-orbit>
+        <div class="orbit-wrapper">
+            <div class="orbit-controls">
+                <button class="orbit-previous"><span class="show-for-sr">Попередній</span><i
+                        class="fi-arrow-left"></i></button>
+                <button class="orbit-next"><span class="show-for-sr">Наступний</span><i class="fi-arrow-right"></i>
+                </button>
+            </div>
+            <ul class="orbit-container">
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="css/image/nails_book.jpg" alt="image alt text">
+                        <figcaption class="orbit-caption">
+                            <h3>Nails</h3>
+                            <p>ДОДАТИ ОПИС МАНІКЮРУ</p>
+                            <a href="price/price.pdf" class="button book-click">Прайс</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="css/image/make_book.jpg" alt="image alt text">
+                        <figcaption class="orbit-caption">
+                            <h3>Make-up</h3>
+                            <p>ДОДАТИ ОПИС МЕЙКАПУ</p>
+                            <a href="price/price.pdf" class="button book-click">Прайс</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="css/image/hair_book.jpg" alt="image alt text">
+                        <figcaption class="orbit-caption">
+                            <h3>Hair</h3>
+                            <p>ДОДАТИ ОПИС ВОЛОССЯ</p>
+                            <a href="price/price.pdf" class="button book-click">Прайс</a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- gallery -->
+<div class="gallery">
+    <div id="instafeed">
+    </div>
+</div>
 
+<!-- contacts -->
+<div class="contacts row">
+    <div class="google-maps" id="googleMap"></div>
+    <div class="contact-info">
+        <h3>КОНТАКТИ</h3>
+        <div class="contacts-text">
+            <div class="contact-address contact-inside">
+                <div class="contact-text-big">Адреса</div>
+                <div class="contacts-text-small">вул. Григорія Сковороди 2</div>
+            </div>
+            <div class="contact-phone contact-inside">
+                <div class="contact-text-big">Телефон</div>
+                <div class="contacts-text-small">+380 00 000 00 00</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="footer-inside">
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/atartasuk"></a>
+            <a class="social-button instagram" href="https://www.instagram.com/anna.tartasyuk/"></a>
+        </div>
+        <div class="footer-text">Даний проект створений у рамках курсу програмування</div>
+    </div>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgvro_u47Gyfy2pKW5gn-aESY7DTvBk1Y"
+        type="text/javascript"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script type="text/javascript" src="js/vendor/foundation.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
-</html>
