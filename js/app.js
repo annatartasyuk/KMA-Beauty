@@ -9,7 +9,7 @@ function initialize() {
 
     var mapProp = {
         center: home,
-        zoom: 16
+        zoom: 15
     };
     var html_element = document.getElementById("googleMap");
     mapp = new google.maps.Map(html_element, mapProp);
@@ -17,7 +17,10 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: point,
         map: mapp,
-        title: "We are here!"
+        icon: {
+            url: "css/image/macaron.png",
+            scaledSize: new google.maps.Size(41, 41)
+        }
     });
 }
 
@@ -47,7 +50,7 @@ $('.contacts-click').click(function () {
         },
         'slow');
 });
-$('.blink-click').click(function () {
+$('.beauty-click').click(function () {
     $('html,body').animate({
             scrollTop: $('.logo-section').offset().top
         },
