@@ -4,7 +4,7 @@ $(function () {
 });
 
 function initialize() {
-    var point = {lat: 50.450083, lng: 30.495375};
+    var point = {lat: 50.465156, lng: 30.519444};
     home = new google.maps.LatLng(point);
 
     var mapProp = {
